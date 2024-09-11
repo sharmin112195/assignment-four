@@ -1,6 +1,6 @@
 
 function calculateFinalScore(obj) {
-   if (typeof obj !== "object"){
+   if (typeof obj !== "object" || obj.testScore > 50 || obj.schoolGrade > 30){
     return "Invalid Input"
    }
    let totalMarks = obj.testScore + obj.schoolGrade ;
@@ -28,4 +28,5 @@ else if(!obj.isFFamily && totalMarks < 80){
 console.log(calculateFinalScore("hello") );
   console.log(calculateFinalScore({ name: "Rajib", testScore: 15,  schoolGrade: 25, isFFamily : true }));
   console.log(calculateFinalScore({ name: "Rajib", testScore: 50,  schoolGrade: 30, isFFamily : false }));
+  console.log(calculateFinalScore({ name: "Rajib", testScore: 60,  schoolGrade: 40, isFFamily : false }));
 
