@@ -1,7 +1,7 @@
 
 function  waitingTime(waitingTimes  , serialNumber) {
      if(!Array.isArray(waitingTimes) || typeof serialNumber !== 'number'){
-         return 'Invalid Input'
+         return 'Invalid Input';
      }
     let totalLength = waitingTimes.length;
     let candidate = serialNumber - 1;

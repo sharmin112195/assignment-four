@@ -1,23 +1,23 @@
 
 function calculateFinalScore(obj) {
    if (typeof obj !== "object" || obj.testScore > 50 || obj.schoolGrade > 30){
-    return "Invalid Input"
+    return "Invalid Input";
    }
    let totalMarks = obj.testScore + obj.schoolGrade ;
    if (obj.isFFamily){
     totalMarks = totalMarks + 20 ;
    }
 if(obj.isFFamily && totalMarks >= 80){
-    return true
+    return true;
 }
 else if (obj.isFFamily && totalMarks < 80){
-    return false
+    return false;
 }
 else if (!obj.isFFamily && totalMarks >= 80){
-    return true
+    return true;
 }
 else if(!obj.isFFamily && totalMarks < 80){
-    return false
+    return false;
 }
     
 
